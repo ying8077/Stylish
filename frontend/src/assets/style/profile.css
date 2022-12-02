@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.profile-container{
+    width: 400px;
+    margin: 0 auto;
+    padding: 160px 0;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.profile-container h3{
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px 0;
+    border-bottom: 1px solid #3F3A3A;
+    margin: 12px 0;
+}
+
+.profile label{
+    font-weight: 600;
+}
+
+.profile span::before{
+    content: "|";
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.btn-logOut{
+    width: 96px;
+    height: 32px;
+    margin: 24px 0;
+    font-size: 14px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+

@@ -1,0 +1,28 @@
+
+.dashboard_container{
+    position: relative;
+    top: -140px;
+    height: 100vh;
+    margin: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.total_container,
+.pie, 
+.histogram,
+.stack-bar{
+    width: 50%;
+    height: 50%;
+}
+
+.total_container{
+    padding: 15%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+}

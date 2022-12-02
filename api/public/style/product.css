@@ -1,0 +1,36 @@
+body {
+    width: 60%;
+    margin: 0 auto;
+}
+
+nav {
+    margin: 10px 0 50px;
+}
+
+form {
+    margin: 50px 0 0;
+}
+
+input,
+select,
+textarea {
+    margin: 0 0 10px;
+}
+
+.variants{
+    display: flex;
+}
+
+.variant {
+    margin: 0 3px 10px;
+}
+
+.color{
+    height: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0 0;
+}

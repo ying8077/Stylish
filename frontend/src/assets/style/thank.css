@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.thank-container {
+    font-family: 'Noto Sans TC', sans-serif;
+    width: 600px;
+    min-height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+}
+
+.icon-check {
+    background-image: url(../images/check.png);
+    width: 96px;
+    aspect-ratio: 1 / 1;
+}
+
+.thank-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    margin: 16px 0 4px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.orderId{
+    color: #8B572A;
+    font-weight: 600;
+}
+
+.btn-back{
+    width: 180px;
+    height: 40px;
+    margin: 10px;
+    font-size: 14px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+}

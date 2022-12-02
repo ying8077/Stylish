@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1160px;
+}
+
+.tpfield {
+    height: 32px;
+    width: 580px;
+    border: 1px solid #979797;
+    padding: 5px;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.ipt-group {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h5,
+label {
+    font-size: 16px;
+}
+
+h5 {
+    font-weight: 700;
+    padding: 16px 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #3F3A3A;
+}
+
+.radio {
+    width: 476px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group {
+    width: 356px;
+    display: flex;
+    justify-content: space-between;
+}

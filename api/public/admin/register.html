@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style/login.css">
+</head>
+
+<body>
+    <div class="register">
+        <h3>註冊</h3>
+        <form action="/api/users" method="post">
+            <input type="text" class="form-control" placeholder="姓名" name="userName">
+            <input type="text" class="form-control" placeholder="信箱" name="email">
+            <input type="password" class="form-control" placeholder="密碼" name="password">
+            <div class="d-grid col-12">
+                <input type="submit" value="submit" class="btn btn-default btn-success">
+            </div>
+        </form>
+        <div class="d-grid col-12">
+            <a href="/users/auth/facebook" class="btn btn-primary">Sign up with Facebook</a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '1819751978364796',
+            cookie: true,
+            xfbml: true,
+            version: 'v15.0'
+        });
+
+        FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>

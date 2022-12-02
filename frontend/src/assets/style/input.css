@@ -1,0 +1,59 @@
+
+.tpfield {
+    height: 32px;
+    width: 580px;
+    border: 1px solid #979797;
+    padding: 5px;
+    margin-left: auto;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.ipt-group {
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ipt-group{
+    margin-bottom: 30px;
+}
+
+.ipt-group span{
+    color: #b10000;
+    font-size: 12px;
+    margin-left: 120px;
+    display: none;
+}
+
+input:invalid[focused="true"]{
+    border: 1px solid #b10000;
+}
+
+input:invalid[focused="true"] + span{
+    display: block;
+}
+
+.radio {
+    width: 476px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.radio-group {
+    width: 356px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.radio-group input {
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 1279px) {
+    .ipt-group span{
+        margin-left: 0px;
+    }
+}

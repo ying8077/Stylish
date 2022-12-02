@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.cart-container,
+.order-container,
+.cardview-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cart-container {
+    padding: 50px 0;
+}
+
+.cart-header,
+.cart-item {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 0.25fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.cart-header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.cart-header label {
+    position: relative;
+    left: -10px;
+    width: 100%;
+}
+
+.cart-header label:first-child {
+    left: 0;
+    text-align: left;
+}
+
+.cart-header label:nth-child(4) {
+    left: -22px;
+}
+
+.cart-items {
+    border: 1px solid #979797;
+    padding: 10px 30px;
+}
+
+.cart-item {
+    margin: 30px 0;
+}
+
+.cart-info {
+    display: flex;
+    justify-self: start;
+}
+
+.cart-item img {
+    width: 114px;
+    height: 132px;
+    margin-right: 16px;
+}
+
+.cart-title,
+.cart-item-id {
+    margin-bottom: 8px;
+}
+
+.cart-variant {
+    margin: 4px 0;
+}
+
+.cart-variant-label::after {
+    content: "|";
+    padding: 0 5px;
+}
+
+select {
+    width: 80px;
+    height: 32px;
+    background-color: #F3F3F3;
+    border: 1px solid #979797;
+    border-radius: 8px;
+    padding: 0 12px;
+}
+
+select:focus,
+select:active,
+.tpfield:focus,
+.tpfield:active {
+    outline: none;
+}
+
+.cart-remove {
+    background-image: url("../images/cart-remove.png");
+    width: 44px;
+    aspect-ratio: 1 / 1;
+}
+
+.cart-remove:hover {
+    background-image: url("../images/cart-remove-hover.png");
+}
+
+.cart-item-bottom label {
+    display: none;
+}
+
+.cardview-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardview-container .ipt-group {
+    margin-bottom: 30px;
+}
+
+h5 {
+    font-weight: 700;
+    padding: 16px 0;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #3F3A3A;
+}
+
+.side-container {
+    margin-left: auto;
+    width: 240px;
+}
+
+.side-row {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.dollar-sign {
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.dollar-value {
+    font-size: 30px;
+}
+
+.side-row.ship {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #3F3A3A;
+}
+
+.btn-pay {
+    width: 240px;
+    height: 52px;
+    margin: 40px 0 70px;
+    margin-left: auto;
+    letter-spacing: 0.2em;
+    font-size: 20px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.btn-pay[disabled]{
+    background-color: rgba(236, 236, 236, 0.25);
+    color:rgba(63, 58, 58, 0.25);
+}
+
+iframe:nth-child(2){
+    display: none;
+}
+
+@media screen and (max-width: 1279px) {
+
+    .cart-container,
+    .order-container,
+    .cardview-container {
+        margin: 0 24px;
+        font-size: 14px;
+    }
+
+    .cart-container {
+        padding: 20px 0;
+    }
+
+    .cart-header {
+        margin-bottom: 10px;
+    }
+
+    .cart-header label {
+        display: none;
+    }
+
+    .cart-header label:first-child {
+        display: block;
+        font-weight: 700;
+    }
+
+    .cart-items {
+        border: none;
+        padding: 0px;
+    }
+
+    .cart-item {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        padding-top: 20px;
+        border-top: 1px solid #3F3A3A;
+        position: relative;
+    }
+
+    .cart-info {
+        width: 90%;
+    }
+
+    .cart-item-bottom{
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    select {
+        height: 28px;
+        padding: 0 16px;
+    }
+
+    .cart-item-bottom label {
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .cart-remove{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .tpfield {
+        width: 100%;
+    }
+
+    .ipt-group,
+    .order-info-name {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .ipt-group label{
+        margin-bottom: 10px;
+    }
+
+    .order-info-name .ipt-group {
+        margin-bottom: 6px;
+    }
+
+    h5 {
+        font-size: 16px;
+        padding-bottom: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    .radio {
+        flex-wrap: wrap;
+    }
+
+    .radio label{
+        width: 100%;
+    }
+
+    .dollar-value {
+        font-size: 24px;
+    }
+
+    .btn-pay {
+        width: 100%;
+        height: 44px;
+        margin-bottom: 28px;
+        font-size: 16px;
+    }
+}
